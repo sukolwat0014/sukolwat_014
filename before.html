@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>สร้างแบบฟอร์มHTML</h2>
+
+    <p>กรอกข้อมูลตัวอย่างตามหัวข้อด้านล่าง้ะื่อทดสอบความเข้าใจเกี่ยวกับelementและAttribute ต่างๆของ
+    <form>
+        </p>
+
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                <label for="fname">ชื่อ-สกุล</label>
+                <input type="text" id="fname" name="fname" placeholder="ชื่อ-สกุล">
+                <label for="gender">เพศ</label>
+                <input type="radio" id="html" name="fav_language" value="ชาย">
+                <label for="html">ชาย</label>
+                <input type="radio" id="css" name="fav_language" value="หญิง">
+                <label for="css">หญิง</label>
+                <input type="radio" id="javascript" name="fav_language" value="อื่นๆ">
+                <label for="javascript">อื่นๆ</label>
+                <label for="birthday">วันเกิด:</label>
+                <input type="date" id="birthday" name="birthday">
+            </fieldset>
+        </form>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>ช่องทางติดต่อ</legend>
+                <label for="email">อีเมล</label>
+                <input type="text" id="fname" name="fname" placeholder="example@gmail.com">
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <input type="tel" id="phone" name="phone" placeholder="080-000-0000"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="homepage">เว็ปไซต์</label>
+                <input type="url" id="homepage" name="homepage" placeholder="https://">
+            </fieldset>
+        </form>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>ทักษะและความสนใจ</legend>
+                <label for="gender">เลือกทักษะที่ถนัด (เลือกได้หลายข้อ)</label>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> HTML</label>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> CSS</label>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Javascript</label>
+                <label for="vol">ระดับความชำนาญด้าน HTML (1-10):</label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+                <input type="submit" value="Submit">
+                <label for="favcolor">5 สีที่ชอบ:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#3333FF">
+                <label for="vol">บราวเซอร์ที่ใช้บ่อย</label>
+                <input list="browsers" placeholder="เลือกหรือพิมพ์ชื่อบราวเซอร์">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </fieldset>
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>อื่นๆ</legend>
+                    <label for="myfile">รูปโปรไฟล์</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <label for="country">ประเทศ</label>
+                    <select id="country" name="country">
+                        <option value="th">ไทย</option>
+                        <option value="cam">กัมพูชา</option>
+                        <option value="bur">เมียนมา</option>
+                        <option value="laos">ลาว</option>
+                    </select>
+                    <label for="message">เกี่ยวกับตัวคุณ</label>
+                    <textarea name="message" rows="10" cols="30">เล่าเกี่ยวกับตัวคุณ</textarea>
+            </form>
+            </fieldset>
+            <form action="/action_page.php">
+                <input type="reset" value="ล้างข้อมูล">
+                <input type="submit" value="ล้างแบบฟอร์ม">
+                <input type="button" value="แสดงตัวอย่าง">
+            </form>
+
+
+</body>
+
+</html>
