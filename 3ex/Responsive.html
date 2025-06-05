@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+}
+header {
+background-color: #4CAF50;
+color: white;
+padding: 20px;
+text-align: center;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+.column {
+flex: 50%;
+padding: 10px;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+@media (max-width: 600px) {
+.column {
+flex: 100%;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>My Responsive Website</h1>
+</header>
+
+<div class="row">
+<div class="column">
+<h2>Column 1</h2>
+<p>Some content...</p>
+</div>
+<div class="column">
+<h2>Column 2</h2>
+</div>
+</div>
+
+</body>
+</html>
